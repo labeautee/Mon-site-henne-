@@ -4,11 +4,65 @@ body {
   color: #3e3e3e;
   background-color: #fdfaf6;
   line-height: 1.6;
+  margin: 0;
+  padding: 0;
 }
 
-/* En-tête, nav, footer, sections communs ici... */
+/* En-tête, nav, footer communs */
+header {
+  background-color: #a87444;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+}
+
+nav {
+  background-color: #deb887;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  color: #000;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer {
+  background-color: #a87444;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
+}
+
+footer a {
+  color: white;
+  text-decoration: underline;
+}
+
+/* Sections communes */
+.section {
+  padding: 40px 20px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  font-family: 'Playfair Display', serif;
+}
 
 /* Styles spécifiques par page */
+
+/* Page Accueil */
 .page-accueil .hero {
   background-image: url('https://images.unsplash.com/photo-1567784177958-bc6a5c6392e8');
   background-size: cover;
@@ -18,31 +72,95 @@ body {
   text-align: center;
 }
 
+.page-accueil .hero h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-family: 'Playfair Display', serif;
+}
+
+/* Page Bienfaits */
 .page-bienfaits .hero {
-  background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb');
-  background-size: cover;
-  background-position: center;
-  color: white;
+  background-color: #f7f0e4;
+  color: #6a4b2a;
   padding: 80px 20px;
   text-align: center;
 }
 
-.page-tutoriel .hero {
-  /* Par exemple, un autre style pour tutoriel */
-  background-color: #deb887;
-  color: #333;
-  padding: 60px 20px;
-  text-align: center;
-}
-
-/* Autres sections personnalisées par page */
 .page-bienfaits .section h3 {
   color: #6a4b2a;
-  font-family: 'Playfair Display', serif;
+}
+
+/* Page Tutoriel */
+.page-tutoriel .hero {
+  background-color: #deb887;
+  color: #3e3e3e;
+  padding: 80px 20px;
+  text-align: center;
 }
 
 .page-tutoriel .section h3 {
   color: #a87444;
 }
 
-/* Etc. */
+/* Page Préparation */
+.page-preparation .hero {
+  background-color: #e3d4b9;
+  color: #3e3e3e;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.page-preparation .section h3 {
+  color: #a87444;
+}
+
+/* Page Dessins */
+.page-dessins .hero {
+  background-color: #f9f3e9;
+  color: #3e3e3e;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.page-dessins .section h3 {
+  color: #a87444;
+}
+
+/* Responsive mobile/tablette */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  .section h3 {
+    font-size: 1.4rem;
+  }
+
+  .hero {
+    padding: 60px 20px !important;
+  }
+
+  .hero h2 {
+    font-size: 1.5rem !important;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 10px 5px;
+    font-size: 0.9rem;
+  }
+
+  .video-card {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .cta a {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+
+  footer p {
+    font-size: 0.9rem;
+  }
+}
