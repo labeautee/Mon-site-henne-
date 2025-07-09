@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Beauté au Henné Naturel</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Henné Naturel - Beauté traditionnelle</title>
 
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9QB7MEVYDW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-9QB7MEVYDW');
+  </script>
 
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-9QB7MEVYDW"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-9QB7MEVYDW');
-</script>
-
-
-
+  <!-- Google AdSense -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5389508327719205"
      crossorigin="anonymous"></script>
+
+  <!-- Fonts & CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Open+Sans&display=swap" rel="stylesheet">
 
   <style>
     body {
@@ -51,11 +52,25 @@
       max-width: 900px;
       margin: auto;
     }
-    .image {
-      max-width: 100%;
+    .image-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .image-grid img {
+      width: 300px;
       height: auto;
-      display: block;
-      margin: 20px auto;
+      border-radius: 8px;
+    }
+    .content {
+      margin-top: 20px;
+      text-align: center;
+    }
+    video {
+      max-width: 100%;
+      border-radius: 8px;
     }
     ul {
       list-style: disc;
@@ -68,81 +83,118 @@
       padding: 10px;
       margin-top: 40px;
     }
-    .cta {
-      text-align: center;
-      margin-top: 30px;
-    }
-    .cta a {
-      background-color: #8b4513;
-      color: white;
-      padding: 12px 25px;
-      text-decoration: none;
-      border-radius: 5px;
+    @media screen and (max-width: 600px) {
+      .image-grid img,
+      video {
+        width: 100% !important;
+      }
     }
   </style>
 </head>
+<body>
 
-<body class="page-accueil">
+  <main>
+    <header>
+      <h1>Henné Naturel</h1>
+      <nav>
+        <a href="#bienfaits">Bienfaits</a>
+        <a href="#dessins">Dessins</a>
+        <a href="#preparation">Préparation</a>
+        <a href="#videos">Vidéos</a>
+      </nav>
+    </header>
 
-  <header>
-    <h1>La Beauté de la Femme</h1>
-    <p>Henné naturel et beauté traditionnelle</p>
-  </header>
+    <section class="hero">
+      <h2>La Beauté De Femme</h2>
+      <p>Découvrez les secrets du henné traditionnel, entre soin, art et culture.</p>
+      <img src="images/henne.jpg" alt="henne beauté" width="300">
+    </section>
 
-  <nav>
-    <a href="#accueil">Accueil</a>
-    <a href="#dessins">Dessins</a>
-    <a href="#videos">Vidéos</a>
-    <a href="#astuces">Astuces</a>
-    <a href="#contact">Contact</a>
-    <a href="tutoriel.html">Tutoriels</a>
-  </nav>
+    <section id="bienfaits">
+      <h3>Bienfaits du Henné</h3>
+      <p>Le henné naturel est une plante utilisée depuis des siècles pour ses propriétés médicinales et cosmétiques :</p>
+      <ul>
+        <li>Renforcer les cheveux</li>
+        <li>Purifier le cuir chevelu</li>
+        <li>Apaiser la peau</li>
+        <li>Décorer les mains et les pieds naturellement</li>
+      </ul>
+      <img src="images/henne2.jpg" alt="henne naturel" width="300">
+    </section>
 
-  <section id="accueil">
-    <h2>Bienvenue dans l’univers du Henné Naturel</h2>
-    <p>Découvrez l’art du henné traditionnel, des méthodes naturelles, des dessins uniques et des astuces pour sublimer votre peau.</p>
-
-    <!-- ✅ Pub Google AdSense -->
- 
-    <img src="https://i.ibb.co/Lz4XT96d/file-000000005e7c6246b207723241bf5b4a.png" alt="Henné traditionnel sur les mains" class="image">
-  </section>
-
-  <section id="dessins">
-    <h2>Exemples de dessins de henné</h2>
-    <ul>
-      <li>Style Floral</li>
-      <li>Style Mandala</li>
-      <li>Style Traditionnel Africain</li>
-    </ul>
-    <img src="https://i.ibb.co/8Dm8bxks/img-1727239782857-1.jpg" alt="Motif floral" class="image">
-    <img src="https://i.ibb.co/d4mztVGd/a990eaf6-53f2-4e75-8c6a-72df96a7683a.png" alt="Motif mandala" class="image">
-  </section>
-
-  <section id="videos">
-    <h2>Tutoriels en Vidéo</h2>
-    <p>Apprenez à appliquer le henné étape par étape grâce à nos vidéos pratiques.</p>
-    <div class="cta">
-      <a href="videos.html">Voir les tutoriels en vidéo</a>
+    <div class="content">
+      <h3>🎥 Tutoriel Vidéo : Reconnaître un bon henné</h3>
+      <video controls>
+        <source src="videos/henne8.mp4" type="video/mp4">
+        Votre navigateur ne supporte pas les vidéos.
+      </video>
     </div>
-  </section>
 
-  <section id="astuces">
-    <h2>Astuces pour une couleur intense</h2>
-    <ul>
-      <li>Laisser poser le henné au moins 4 heures</li>
-      <li>Ajouter du jus de citron et du sucre au mélange</li>
-      <li>Appliquer de la chaleur douce après application</li>
-    </ul>
+    <section id="preparation">
+      <h3>Préparation du Henné</h3>
+      <p>Voici une méthode traditionnelle pour préparer le henné :</p>
+      <ol>
+        <li>Choisir une poudre de henné 100% naturelle.</li>
+        <li>Ajouter de l'eau tiède, du citron et parfois des huiles essentielles.</li>
+        <li>Laisser reposer plusieurs heures.</li>
+        <li>Appliquer sur peau propre avec un cône ou une seringue.</li>
+      </ol>
 
-    <!-- ✅ Exemple d’intégration d’un produit Amazon -->
-    
-<footer id="contact">
-  <p>Contact : henna.naturele@gmail.com | Instagram : @henne.beaute</p>
-  <p>
-    <a href="mentions-legales.html" style="color: white;">Mentions légales</a> |
-    <a href="politique-confidentialite.html" style="color: white;">Politique de confidentialité</a>
-  </p>
-  <p>&copy; 2025 Henné Naturel. Tous droits réservés.</p>
-</footer>
+      <div class="content">
+        <h3>🎥 Tutoriel Vidéo : Préparation du henné</h3>
+        <video controls>
+          <source src="videos/henne9.mp4" type="video/mp4">
+          Votre navigateur ne supporte pas les vidéos.
+        </video>
+      </div>
+    </section>
+
+    <section id="dessins">
+      <h3>Motifs & Dessins</h3>
+      <p>Explorez une variété de motifs : arabesques fines, styles africains, fleurs géométriques...</p>
+
+      <div class="image-grid">
+        <img src="images/henne10.jpg" alt="">
+        <img src="images/henne1.jpg" alt="">
+        <img src="images/henne15.jpg" alt="">
+        <img src="images/henne3.jpg" alt="">
+        <img src="images/henne4.jpg" alt="">
+        <img src="images/henne5.jpg" alt="">
+        <img src="images/henne6.jpg" alt="">
+        <img src="images/henne8.jpg" alt="">
+        <img src="images/henne13.jpg" alt="">
+        <img src="images/henne14.jpg" alt="">
+        <img src="images/henne11.jpg" alt="">
+        <img src="images/henne12.jpg" alt="">
+      </div>
+    </section>
+
+    <section id="videos">
+      <h3>Vidéos Tutoriels</h3>
+      <p>Apprenez pas à pas à dessiner, appliquer et entretenir le henné.</p>
+
+      <div class="image-grid">
+        <video controls><source src="videos/henne1.mp4" type="video/mp4"></video>
+        <video controls><source src="videos/henne2.mp4" type="video/mp4"></video>
+        <video controls><source src="videos/henne3.mp4" type="video/mp4"></video>
+        <video controls><source src="videos/henne4.mp4" type="video/mp4"></video>
+        <video controls><source src="videos/henne5.mp4" type="video/mp4"></video>
+        <video controls><source src="videos/henne6.mp4" type="video/mp4"></video>
+        <video controls><source src="videos/henne7.mp4" type="video/mp4"></video>
+        <video controls><source src="videos/henne8.mp4" type="video/mp4"></video>
+        <video controls><source src="videos/henne9.mp4" type="video/mp4"></video>
+      </div>
+    </section>
+
+    <footer id="contact">
+      <p>Contact : henna.naturele@gmail.com | Instagram : @henne.beaute</p>
+      <p>
+        <a href="mentions-legales.html" style="color: white;">Mentions légales</a> |
+        <a href="politique-confidentialite.html" style="color: white;">Politique de confidentialité</a>
+      </p>
+      <p>&copy; 2025 Henné Naturel. Tous droits réservés.</p>
+    </footer>
+  </main>
+
 </body>
 </html>
