@@ -73,10 +73,21 @@
 </header>
 
 <!-- HERO -->
-<section class="bg-gradient-to-r from-primary to-accent text-white py-20 text-center">
+<!--<section class="bg-gradient-to-r from-primary to-accent text-white py-20 text-center">
   <h2 class="text-4xl font-serif font-bold mb-4">L’Art du Henné Naturel</h2>
   <p class="max-w-xl mx-auto mb-6">Formations, tutoriels et créations professionnelles</p>
-</section>
+</section> -->
+
+<section class="bg-gradient-to-r from-primary to-accent text-white py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-serif font-bold mb-6">L'Art du Henné Naturel</h1>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Découvrez nos formations et produits de qualité pour maîtriser l'art du henné</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#Tutoriels" class="bg-white text-primary px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition">Commencer à apprendre</a>
+                <a href="#boutique" class="border-2 border-white text-white px-6 py-3 rounded-full font-semibold hover:bg-white hover:text-primary transition">Acheter du henné</a>
+            </div>
+        </div>
+    </section>
 
 <!-- 🔥 ADSENSE BLOC 1 -->
 <div class="container mx-auto my-8 text-center">
@@ -89,28 +100,75 @@
   <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
 
-<!-- TUTORIELS -->
-<section id="Tutoriels" class="py-16 bg-white">
-  <h2 class="text-3xl text-center font-serif text-primary mb-10">Tutoriels</h2>
 
-  <div class="max-w-4xl mx-auto">
-    <iframe class="w-full h-64 rounded shadow"
-      src="https://www.youtube.com/embed/5lm1AKAWFuk"
-      allowfullscreen></iframe>
-  </div>
-</section>
+<!-- Tutoriels Section -->
+    <section id="Tutoriels" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
 
-<!-- GALERIE -->
-<section id="galerie" class="py-16">
-  <h2 class="text-3xl text-center font-serif text-primary mb-10">Galerie</h2>
+            <h2 class="text-3xl font-serif font-bold text-center mb-12 text-primary">Nos Tutoriels</h2>
 
-  <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-5xl mx-auto px-4">
-    <img src="images/henne1.jpg" class="rounded shadow">
-    <img src="images/henne2.jpg" class="rounded shadow">
-    <img src="images/henne3.jpg" class="rounded shadow">
-    <img src="images/henne4.jpg" class="rounded shadow">
-  </div>
-</section>
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+
+                <!-- Tutoriel vidéo -->
+                <div class="bg-gray-100 rounded-lg overflow-hidden shadow-lg">
+                    <div class="relative pt-[56.25%] bg-black">
+                        <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/5lm1AKAWFuk" allowfullscreen></iframe>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Techniques de base</h3>
+                        <p class="text-gray-600 mb-4">Apprenez les techniques fondamentales pour débuter avec le henné</p>
+                        <a href="Tutoriels.html" class="text-accent font-semibold hover:underline">Voir plus de détails</a>
+                    </div>
+                </div>
+
+                <!-- Tutoriel texte -->
+                <div class="bg-gray-100 rounded-lg overflow-hidden shadow-lg">
+                    <img src="images/henne.jpg" alt="Tutoriel écrit sur le henné" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Guide complet des motifs</h3>
+                        <p class="text-gray-600 mb-4">Découvrez notre guide étape par étape pour créer des motifs complexes</p>
+                        <a href="Tutoriels.html" class="text-accent font-semibold hover:underline">Lire le tutoriel</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="text-center">
+                <a href="Tutoriels.html" class="inline-block bg-primary text-white px-6 py-3 rounded-full font-semibold hover:bg-accent transition">Voir tous les tutoriels</a>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+  <!-- Galerie -->
+    <section id="galerie" class="py-16 bg-amber-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-serif font-bold text-center mb-12 text-primary">Galerie de Réalisations</h2>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <img src="images/henne1.jpg" class="rounded-lg shadow-md hover:shadow-xl transition h-48 w-full object-cover">
+                <img src="images/henne2.jpg" class="rounded-lg shadow-md hover:shadow-xl transition h-48 w-full object-cover">
+                <img src="images/henne3.jpg" class="rounded-lg shadow-md hover:shadow-xl transition h-48 w-full object-cover">
+                <img src="images/henne4.jpg" class="rounded-lg shadow-md hover:shadow-xl transition h-48 w-full object-cover">
+                <img src="images/henne5.jpg" class="rounded-lg shadow-md hover:shadow-xl transition h-48 w-full object-cover">
+                <img src="images/henne6.jpg" class="rounded-lg shadow-md hover:shadow-xl transition h-48 w-full object-cover">
+                <img src="images/henne7.jpg" class="rounded-lg shadow-md hover:shadow-xl transition h-48 w-full object-cover">
+                <img src="images/henne8.jpg" class="rounded-lg shadow-md hover:shadow-xl transition h-48 w-full object-cover">
+            </div>
+
+            <div class="text-center mt-8">
+                <a href="galerie.html" class="inline-flex items-center text-accent font-semibold hover:underline">
+                    Voir plus de réalisations
+                    <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
 
 <!-- 🔥 ADSENSE BLOC 2 -->
 <div class="container mx-auto my-8 text-center">
@@ -135,7 +193,25 @@
     <textarea name="message" rows="4" placeholder="Message" required class="w-full p-3 rounded border"></textarea>
     <button class="bg-primary text-white w-full py-3 rounded hover:bg-accent">Envoyer</button>
   </form>
-</section>
+</section> 
+
+
+<!-- Informations de contact -->
+    <div class="max-w-2xl mx-auto bg-white shadow-lg rounded-lg p-8 mb-16">
+        <h3 class="text-xl font-semibold mb-4 text-primary">Informations de contact</h3>
+
+        <p class="mb-2 flex"><i class="fas fa-map-marker-alt mr-3 mt-1"></i>123 Rue du Henné, Paris</p>
+        <p class="mb-2 flex"><i class="fas fa-phone mr-3"></i>+33 1 23 45 67 89</p>
+        <p class="mb-4 flex"><i class="fas fa-envelope mr-3"></i>henna.naturele@gmail.com</p>
+
+        <h3 class="text-xl font-semibold mt-6 mb-4 text-primary">Suivez-nous</h3>
+        <div class="flex space-x-4 text-xl">
+            <a href="#" class="hover:text-secondary"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="hover:text-secondary"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="hover:text-secondary"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+
 
 <!-- FOOTER -->
 <footer class="bg-primary text-white py-6 text-center">
